@@ -763,7 +763,7 @@ var ACTIVE_STD={name:'PMOD002 (Varsayilan)',source:'builtin',loaded:false,
   custPrefix:'Z',headerPattern:'ZPRJ_PATTERN',company:'',docNo:''};
 // ── STORAGE KATMANI ──────────────────────────────────────
 // Öncelik: 1) Cloudflare Worker API  2) Claude Artifacts  3) localStorage
-var CF_WORKER = 'https://empty-dew-c85e.alii-polatt.workers.dev'; // deploy sonrası worker URL buraya yazılır, örn: https://abap-storage.HESAP.workers.dev
+var CF_WORKER = 'https://abap-storage.alii-polatt.workers.dev'; // deploy sonrası worker URL buraya yazılır, örn: https://abap-storage.HESAP.workers.dev
 
 function hasStorage(){return typeof window!=='undefined'&&window.storage&&typeof window.storage.get==='function';}
 function hasCF(){return CF_WORKER!=='';}
